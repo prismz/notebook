@@ -7,4 +7,4 @@ To install, place the executable anywhere on $PATH (`/usr/local/bin`) and run `c
 
 For more info and usage instructions:
 
-hasanzahra.xyz/articles/notebook.html
+https://hasanzahra.xyz/articles/notebook.html
