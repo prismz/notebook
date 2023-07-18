@@ -42,7 +42,7 @@ new_page() {
     next=$(next_entry "$entries")
     path="$1/$next"
 
-    timestamp=$(date +"%a %b %d %I:%M:%S %p")
+    timestamp=$(date)
 
     echo "$timestamp" > "$path"
     $EDITOR "$path"
@@ -72,7 +72,7 @@ notebook_info() {
 }
 
 backup_notebook() {
-    timestamp=$(date +"%Y-%m-%d-%H:%M:%S")
+    timestamp=$(date)
     path="$1-$timestamp.tar"
 
     # use --force-local because tar interprets the `:` from the timestamp
